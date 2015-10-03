@@ -1,0 +1,12 @@
+// _main.scss
+
+////= Main Container Styling
+//======================================================================//
+
+.main {
+  background: $wild-sand;
+  border-radius: $main-br;
+  box-shadow: 0 pxem(-3px) pxem(5px) pxem(-3px) $shadow-color;
+  padding: pxem(20px) 0;
+  position: relative;
+}

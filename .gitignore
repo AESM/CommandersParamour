@@ -1,7 +1,7 @@
 ## Files matching these search terms will be ignored by Git
 
 ####= Personal .gitignore File List
-#========================================================================#
+##======================================================================##
 
 ## Backup files
 *.bak
@@ -83,7 +83,7 @@ bin/stubs
 .sass-cache/
 
 ####= GitHub .gitignore Files
-#========================================================================#
+##======================================================================##
 
 ## Based on .gitignore file templates found on GitHub
 ## SOURCE: https://github.com/github/gitignore

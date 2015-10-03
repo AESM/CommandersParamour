@@ -1,0 +1,126 @@
+// _helpers.scss
+
+////= Helpers
+//======================================================================//
+
+//== Helper Placeholders ================================================/
+
+    /// => ToDo: implement the new Kellum method <= ///
+/// @link https://github.com/scottkellum/scottkellum.com/blob/master/source/stylesheets/type/_icons.scss
+/// @link https://github.com/scottkellum/scottkellum.com/blob/master/source/stylesheets/_widgets.scss
+// %phantom-font {
+//   font-family: ADOBE-BLANK-FONT;
+//   -webkit-font-smoothing: antialiased;
+//   font-style: normal;
+//   font-weight: normal;
+//   text-rendering: geometricPrecision;
+// }
+
+//== Helper Classes =====================================================/
+
+/// Clearfix lets an element clear its child elements, in float layouts
+//where elements are floated horizontal stacking
+/// Often used to combat the zero-height container problem
+.clearfix {
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/// Full-width, centered container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-grid-width;
+  padding-left: pxem(15px);
+  padding-right: pxem(15px);
+  width: 100%;
+}
+
+/// Center elements
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/// Center alignment
+.center-align {
+  text-align: center;
+}
+
+    /// => ToDo: decide on which properties to use <= ///
+/// Remove default list styling
+.no-bullets {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  // list-style: none;
+  // margin: 0;
+  // padding: 0;
+}
+
+/// Fixed position
+.fasten {
+  position: fixed;
+}
+
+    /// => ToDo: implement the new Kellum method <= ///
+/// The new Kellum method
+/// Hide text in the element behind it
+/// @author Scott Kellum
+/// @link http://scottkellum.com/2013/10/25/the-new-kellum-method.html
+// .text-hide {
+//   font-family: ADOBE-BLANK-FONT;.
+// }
+
+/// The old Kellum method
+/// Hide text in the element behind it
+/// @author Scott Kellum
+/// @link http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/// Hide element visually and from screenreaders, without removing it
+/// @source HTML5Boilerplate
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L151-L157
+.invisible {
+  visibility: hidden;
+}
+
+/// Hide only visually, but have it available for screen readers
+/// @source HTML5Boilerplate
+/// @modifier Ali Esmaili
+/// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: pxem(1px);
+  margin: pxem(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: pxem(1px);
+
+  /// Extends visually-hidden to allow the element to be focusable when
+  //navigated to via the keyboard
+  /// @source HTML5Boilerplate
+  /// @link https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L135-L149
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}

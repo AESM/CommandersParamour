@@ -1,0 +1,16 @@
+// _footer.scss
+
+////= Footer Styling
+//======================================================================//
+
+.footer {
+  @extend .center-align;
+  font-size: $font-size--md;
+  padding-bottom: pxem(35px);
+  padding-top: pxem(35px);
+
+  p {
+    color: $wild-sand;
+    margin: pxem(25px) 0 0;
+  }
+}

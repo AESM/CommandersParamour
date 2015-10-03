@@ -1,0 +1,62 @@
+// _variables.scss
+
+////= Global Variable Assignments
+//======================================================================//
+
+//== Asset Path Usage ===================================================/
+
+$fav: $path__img + '/favicons';
+$logo: $path__img + '/logos';
+
+//== Font Usage =========================================================/
+
+$primary-font: $font-stack--aleo;
+$secondary-font: $font-stack--futura;
+$tertiary-font: $font-stack--garamond;
+$accent-font: $font-stack--courier-new;
+
+// $code-font: $XXXXXX;
+// $link-font: $XXXXXX;
+// $note-font: $XXXXXX;
+$text-font: $font-stack--roboto; // _typography => body {font: pxem(40) $text-font;}
+
+//== Color Usage ========================================================/
+
+$primary-color: $blue;
+$secondary-color: $maroon;
+$tertiary-color: $purple;
+$accent-color: $navy;
+$shadow-color: rgba($black, .18);
+
+$backg-color: $lochmara; // _base => body {background: $backg-color;}
+$code-color: $porcelain;
+$link-color: $java; // _base => a {background: $link-color;}
+$note-color: $grey;
+$text-color: $shark; // _typography => body {color: $text-color;}
+
+//== Math Variable Usage ================================================/
+
+$main-br: $radius--slight;
+
+$main-speed: $speed--xqck; // _base => a,button {transition: $main-speed;}
+
+$max-grid-width: $width--xl; // _helpers => .container {max-width: $max-grid-width;}
+
+//== Assigned Color Maps ================================================/
+
+$ui-map: (
+  'error': $monza,
+  'info': $studio,
+  'important': $crimson,
+  'missing': $sun-glow,
+  'notice': $purple-heart,
+  'success': $jungle-green,
+  'warning': $tango
+);
+
+$mood-map: (
+  'cool': $pacific-blue,
+  'dim': $cod-gray,
+  'luminous': $wild-sand,
+  'warm': $coral
+);

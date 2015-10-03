@@ -1,0 +1,129 @@
+// _base.scss
+
+////= Base Styling
+//======================================================================//
+
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: $clear;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $backg-color;
+  margin: 0;
+}
+
+a,
+button {
+  color: inherit;
+  transition: $main-speed;
+}
+
+a {
+  background-color: $clear;
+  color: $link-color;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    background: currentcolor;
+    content: ' ';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: scaleX(0);
+    transition: inherit;
+  }
+
+  &:active::before,
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button,
+input {
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  overflow: visible;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+ol,
+ul,
+blockquote,
+button,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+img {
+  border: 0;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+li {
+  display: block;
+}
+
+sub,
+sup {
+  font-size: 70%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: pxem(-8px);
+}
+
+sub {
+  bottom: pxem(-4px);
+}

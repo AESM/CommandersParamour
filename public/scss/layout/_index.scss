@@ -1,0 +1,28 @@
+// _index.scss
+
+////= Layout Manifest
+//======================================================================//
+
+/// Import grid styling
+@import 'grid';
+
+/// Import header styling
+@import 'header';
+
+/// Import main container styling
+@import 'main';
+
+/// Import footer styling
+@import 'footer';
+
+/// Import article styling
+@import 'article';
+
+/// Import navigation styling
+@import 'nav';
+
+/// Import sidebar styling
+@import 'sidebar';
+
+/// Import forms styling
+@import 'forms';
