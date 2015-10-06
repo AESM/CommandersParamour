@@ -1,0 +1,17 @@
+// _nav.scss
+
+////= Navigation Styling
+//======================================================================//
+
+.nav {
+
+  a {
+    color: $wild-sand;
+    text-decoration: none;
+  }
+
+  /// Remove default list styling from navigation
+  ul {
+    @extend .no-bullets;
+  }
+}

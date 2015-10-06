@@ -1,0 +1,216 @@
+// _config.scss
+
+////= Global Configuration
+//======================================================================//
+
+//== Asset Paths ========================================================/
+
+$path__font: '../fonts' !default;
+$path__img: '../images' !default;
+$path__js: '../js' !default;
+
+//== Font Stacks ========================================================/
+
+/// Sans-serif font stacks
+$font-stack--open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-stack--futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
+
+$font-stack--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
+$font-stack--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
+
+/// Monospace font stacks
+$font-stack--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
+
+/// Variant and custom font stacks
+$font-stack--aleo: 'Aleo-regular' !default;
+$font-stack--roboto: 'Roboto-regular' !default;
+
+//== Font Attributes ====================================================/
+
+/// Font weights
+$font-weight--thin: 100 !default;
+$font-weight--ultra-light: 200 !default;
+$font-weight--light: 300 !default;
+$font-weight--normal: 400 !default;
+$font-weight--medium: 500 !default;
+$font-weight--demi-bold: 600 !default;
+$font-weight--bold: 700 !default;
+$font-weight--ultra-bold: 800 !default;
+$font-weight--heavy: 900 !default;
+
+/// Font sizes
+$font-size--xs: 80% !default;
+$font-size--sm: 85% !default;
+$font-size--md: 90% !default;
+$font-size--lg: 110% !default;
+$font-size--xl: 120% !default;
+
+//== Descriptive Color Variables ========================================/
+
+/// Standard colors
+$clear: transparent !default;
+
+$white: #FFFFFF !default;
+$silver: #C0C0C0 !default;
+$grey: #808080 !default;
+$black: #000000 !default;
+
+$red: #FF0000 !default;
+$maroon: #800000 !default;
+$brown: #A52A2A !default;
+
+$yellow: #FFFF00 !default;
+$gold: #FFD700 !default;
+$orange: #FFA500 !default;
+
+$lime: #00FF00 !default;
+$green: #008000 !default;
+$olive: #808000 !default;
+
+$aqua: #00FFFF !default;
+$teal: #008080 !default;
+$blue: #0000FF !default;
+$navy: #000080 !default;
+
+$fuchsia: #FF00FF !default;
+$purple: #800080 !default;
+$indigo: #4B0082 !default;
+
+/// Variant and custom colors
+$wild-sand: #F4F4F4 !default;
+$porcelain: #EFF2F3 !default;
+$ebony: #0C0B1D !default;
+$cod-gray: #0B0B0B !default;
+
+$guardsman-red: #BA0101 !default;
+$monza: #C7031E !default;
+$crimson: #DC143C !default;
+
+$sun-glow: #FFCC33 !default;
+$tango: #ED7A1C !default;
+$coral: #FF7F50 !default;
+
+$jungle-green: #29AB87 !default;
+$emerald: #5ECE7F !default;
+$java: #1FC2C2 !default;
+
+$pacific-blue: #009DC4 !default;
+$lochmara: #007EC7 !default;
+$prussian-blue: #003153 !default;
+$shark: #25272C !default;
+
+$studio: #714AB2 !default;
+$purple-heart: #652DC1 !default;
+$meteorite: #3C1F76 !default;
+
+//== Math Variables =====================================================/
+
+/// Border radii
+$radius--slight: .5% !default;
+$radius--bend: 5% !default;
+$radius--curve: 25% !default;
+$radius--round: 50% !default;
+
+// Grid features
+$grid-col-total: 12 !default;
+$grid-col-width: 6.5% !default;
+$grid-gutter-width: 2% !default;
+
+/// Transition durations
+$speed--xxqck: .15s !default;
+$speed--xqck: .3s !default;
+$speed--qck: .7s !default;
+$speed--norm: 1s !default;
+$speed--slw: 1.5s !default;
+$speed--xslw: 2s !default;
+$speed--xxslw: 2.5s !default;
+
+/// Widths
+$width--flr: 1px !default;
+$width--sm-fnt: 12px !default;
+$width--md-fnt: 16px !default;
+$width--ln-hght: 24px !default;
+$width--xxxs: 320px !default;
+$width--xxs: 480px !default;
+$width--xs: 640px !default;
+$width--sm: 768px !default;
+$width--md: 992px !default;
+$width--lg: 1024px !default;
+$width--xl: 1200px !default;
+$width--xxl: 1440px !default;
+$width--xxxl: 1920px !default;
+
+//== Configuration Maps =================================================/
+
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxs': (min-width: 320px),
+  'xxs': (min-width: 480px),
+  'xs': (min-width: 640px),
+  'sm': (min-width: 768px),
+  'md': (min-width: 992px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1440px),
+  'xxxl': (min-width: 1920px)
+) !default;
+
+/// Transition Cubic Bézier function map
+/// Used with @ease function
+$eases: (
+  /// Standard
+  'ease': cubic-bezier(.250, .100, .250, 1),
+  'in': cubic-bezier(.420, 0, 1, 1),
+  'out': cubic-bezier(0, 0, .580, 1),
+  'in-out': cubic-bezier(.420, 0, .580, 1),
+  'linear': cubic-bezier(0, 0, 1, 1),
+  /// Cubic
+  'in-cubic': cubic-bezier(.550, .055, .675, .190),
+  'out-cubic': cubic-bezier(.215, .610, .355, 1),
+  'in-out-cubic': cubic-bezier(.645, .045, .355, 1),
+  /// Quad
+  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  'out-quad': cubic-bezier(.250, .460, .450, .940),
+  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
+  /// Quart
+  'in-quart': cubic-bezier(.895, .030, .685, .220),
+  'out-quart': cubic-bezier(.165, .840, .440, 1),
+  'in-out-quart': cubic-bezier(.770, 0, .175, 1),
+  /// Quint
+  'in-quint': cubic-bezier(.755, .050, .855, .060),
+  'out-quint': cubic-bezier(.230, 1, .320, 1),
+  'in-out-quint': cubic-bezier(.860, 0, .070, 1),
+  /// Sine
+  'in-sine': cubic-bezier(.470, 0, .745, .715),
+  'out-sine': cubic-bezier(.390, .575, .565, 1),
+  'in-out-sine': cubic-bezier(.445, .050, .550, .950),
+  /// Expo
+  'in-expo': cubic-bezier(.950, .050, .795, .035),
+  'out-expo': cubic-bezier(.190, 1, .220, 1),
+  'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  /// Circ
+  'in-circ': cubic-bezier(.600, .040, .980, .335),
+  'out-circ': cubic-bezier(.075, .820, .165, 1),
+  'in-out-circ': cubic-bezier(.785, .135, .150, .860),
+  /// Back
+  'in-back': cubic-bezier(.600, -.280, .735, .045),
+  'out-back': cubic-bezier(.175, .885, .320, 1.275),
+  'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
+) !default;
+
+/// Z-indexing map
+/// Used with @z function
+$zindices: (
+  'over': 9001,
+  'modal': 9000,
+  'overlay': 8000,
+  'dropdown': 7000,
+  'high': 6000,
+  'mid': 5000,
+  'low': 4000,
+  'base': 1,
+  'below': -1,
+  'abyss': -9000
+) !default;

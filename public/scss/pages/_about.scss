@@ -1,0 +1,11 @@
+// _about.scss
+
+////= About Page Styling
+//======================================================================//
+
+.about {
+
+  @include el(photo) {
+    max-width: pxem(190px);
+  }
+}

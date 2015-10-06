@@ -1,0 +1,26 @@
+// _home.scss
+
+////= Home Page Styling
+//======================================================================//
+
+.home {
+
+  @include el(headline) {
+    @extend .center-align;
+    font-size: pxem(24px);
+    margin-top: pxem(14px);
+  }
+
+  @include el(footline) {
+    @extend .center-align;
+    margin-top: pxem(20px);
+
+    > * {
+      margin: 0;
+    }
+  }
+
+  @include el(image) {
+    max-width: pxem(190px);
+  }
+}

@@ -1,0 +1,14 @@
+// _main.scss
+
+////= Main Container Styling
+//======================================================================//
+
+.main {
+  @extend .clearfix;
+  @extend .tupperware;
+  height: pxem(600px);
+  margin: pxem(10px) auto 0;
+  padding: pxem(20px) 0;
+  // position: relative;
+  // width: pxem(700px);
+}

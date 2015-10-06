@@ -1,0 +1,27 @@
+// _board.scss
+
+////= Board Styling
+//======================================================================//
+
+.board {
+  // @extend .center-align;
+  background: $yellow;
+  border-radius: $radius--bend;
+  height: 100%;
+  margin: auto pxem(10px);
+  padding: pxem(10px);
+  width: 100%;
+}
+
+// .board {
+//   @extend .center-align;
+//   background: $yellow;
+//   border-radius: 2.5%;
+//   // display: inline-block;
+//   // height: 100%;
+//   margin: 0 auto;
+//   // padding: pxem(10px) pxem(10px) pxem(20px);
+//   position: absolute;
+//   width: pxem(890px);
+//   // width: 100%;
+// }

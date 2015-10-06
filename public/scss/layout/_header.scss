@@ -1,0 +1,12 @@
+// _header.scss
+
+////= Header Styling
+//======================================================================//
+
+.header {
+  @extend .center-align;
+  padding-bottom: pxem(35px);
+  padding-top: pxem(35px);
+  position: relative;
+  z-index: z('base');
+}

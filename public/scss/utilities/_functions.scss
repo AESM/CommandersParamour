@@ -1,0 +1,51 @@
+// _functions.scss
+
+////= Functions
+//======================================================================//
+
+//== Pixel Conversion ===================================================/
+
+/// Convert pixels to em values
+@function pxem($px-target, $px-compared: $main-font-size) {
+  @return ($px-target / $px-compared) * 1em;
+}
+
+/// Convert pixels to rem values
+@function pxrem($px-target) {
+  $px-compared: $main-font-size;
+  @return ($px-target / $px-compared) * 1rem;
+}
+
+//== Color Tone Adjusters ===============================================/
+
+/// Increase the level of blackness in a color by a certain percentage
+@function blacker($color, $percent) {
+  @return mix($black, $color, $percent);
+}
+
+/// Increase the level of whiteness in a color by a certain percentage
+@function whiter($color, $percent) {
+  @return mix($white, $color, $percent);
+}
+
+//== Sass Map Functions =================================================/
+
+/// Cubic Bézier manager
+/// @param {String} $key - Cubic Bézier option
+/// @requires $eases
+/// @modifier Ali Esmaili
+/// @link https://css-tricks.com/snippets/sass/easing-map-get-function/
+@function ease($key) {
+  @if map-has-key($eases, $key) {
+    @return map-get($eases, $key);
+  }
+
+  @warn 'Unknown `#{$key}` in $eases.';
+  @return null;
+}
+
+/// Z-indexer
+/// @requires $zindices
+@function z($key) {
+  @return map-get($zindices, $key);
+}
