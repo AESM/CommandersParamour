@@ -1,0 +1,10 @@
+// _row.scss
+
+////= Row Styling
+//======================================================================//
+
+.row {
+  @extend .center-align;
+  @extend .clearfix;
+  padding-bottom: 0;
+}

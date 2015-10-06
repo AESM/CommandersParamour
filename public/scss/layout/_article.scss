@@ -3,6 +3,18 @@
 ////= Article Styling
 //======================================================================//
 
-article {
+.article {
   position: relative;
+
+  // @include el(headline) {
+    //
+  // }
+
+  // @include el(footline) {
+    //
+  // }
+
+  // @include el(hyperlink) {
+    //
+  // }
 }

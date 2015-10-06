@@ -1,0 +1,34 @@
+// _column.scss
+
+////= Column Styling
+//======================================================================//
+
+.column {
+  @extend .center-align;
+  @extend .clearfix;
+  display: block;
+  float: left;
+  margin-left: pxem(30px);
+  // margin: pxem(3px);
+  // padding-top: pxem(30px);
+  width: 10%;
+}
+
+// .column {
+//   @extend .center-align;
+//   @extend .clearfix;
+//   display: inline-block;
+//   height: pxem(70px);
+//   margin-left: pxem(15px);
+//   width: pxem(70px);
+// }
+
+// .column {
+//   @extend .center-align;
+//   background-color: inherit;
+//     // border: 1px solid $cod-gray;
+//   display: inline-block;
+//   height: pxem(600px);
+//   // margin: 0 pxem(3.6px);
+//   width: pxem(100px);
+// }

@@ -1,0 +1,11 @@
+// _buttons.scss
+
+////= Button Component Styling
+//======================================================================//
+
+.button {
+  background-color: $grey;
+  color: $black;
+  // height: 40px;
+  padding: pxem(1.5px);
+}

@@ -6,13 +6,13 @@
 //== Pixel Conversion ===================================================/
 
 /// Convert pixels to em values
-@function pxem($px-target, $px-compared: $base__font-size) {
+@function pxem($px-target, $px-compared: $main-font-size) {
   @return ($px-target / $px-compared) * 1em;
 }
 
 /// Convert pixels to rem values
 @function pxrem($px-target) {
-  $px-compared: $base__font-size;
+  $px-compared: $main-font-size;
   @return ($px-target / $px-compared) * 1rem;
 }
 

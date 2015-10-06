@@ -1,0 +1,61 @@
+// _space.scss
+
+////= Space Styling
+//======================================================================//
+
+.space {
+  border-radius: $radius--round;
+  height: pxem(65px);
+  margin: auto;
+  margin-top: pxem(4px);
+  width: pxem(65px);
+
+  @include el(vacant) {
+    @extend .space;
+    background-color: $white;
+
+    &:hover {
+      animation-duration: $speed--qck;
+      -moz-animation-duration: $speed--qck;
+      -o-animation-duration: $speed--qck;
+      -webkit-animation-duration: $speed--qck;
+      // animation-fill-mode: both;
+      // -moz-animation-fill-mode: both;
+      // -o-animation-fill-mode: both;
+      // -webkit-animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: pulse;
+      -moz-animation-name: pulse;
+      -o-animation-name: pulse;
+      -webkit-animation-name: pulse;
+      background-color: $grey;
+    }
+  }
+
+  @include el(player-one-chip) {
+    @extend .space;
+    background-color: $player-one-color;
+    border: $chip-border;
+  }
+
+  @include el(player-two-chip) {
+    @extend .space;
+    background-color: $player-two-color;
+    border: $chip-border;
+  }
+}
+
+// .space {
+//   border-radius: $radius--round;
+//   height: pxem(100px);
+//   margin: pxem(10px);
+//   width: pxem(100px);
+// }
+
+// .space__vacant {
+//   @extend .space;
+//   background-color: $white;
+// }

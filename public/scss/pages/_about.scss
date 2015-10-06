@@ -3,10 +3,9 @@
 ////= About Page Styling
 //======================================================================//
 
-// .about {
-  //
-// }
+.about {
 
-.about__photo {
-  max-width: pxem(190px);
+  @include el(photo) {
+    max-width: pxem(190px);
+  }
 }

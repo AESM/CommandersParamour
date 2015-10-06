@@ -4,9 +4,11 @@
 //======================================================================//
 
 .main {
-  background: $wild-sand;
-  border-radius: $main-br;
-  box-shadow: 0 pxem(-3px) pxem(5px) pxem(-3px) $shadow-color;
+  @extend .clearfix;
+  @extend .tupperware;
+  height: pxem(600px);
+  margin: pxem(10px) auto 0;
   padding: pxem(20px) 0;
-  position: relative;
+  // position: relative;
+  // width: pxem(700px);
 }

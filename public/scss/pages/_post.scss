@@ -3,10 +3,17 @@
 ////= Post Page Styling
 //======================================================================//
 
-// .post {
-  //
-// }
+.post {
 
-.post__title {
-  text-transform: capitalize;
+  @include el(headline) {
+    text-transform: capitalize;
+  }
+
+  // @include el(footline) {
+    //
+  // }
+
+  // @include el(image) {
+    //
+  // }
 }

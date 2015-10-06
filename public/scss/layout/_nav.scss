@@ -3,16 +3,15 @@
 ////= Navigation Styling
 //======================================================================//
 
-// .nav {
-  //
-// }
+.nav {
 
-.nav a {
-  color: $wild-sand;
-  text-decoration: none;
-}
+  a {
+    color: $wild-sand;
+    text-decoration: none;
+  }
 
-/// Remove default list styling from navigation
-.nav ul {
-  @extend .no-bullets;
+  /// Remove default list styling from navigation
+  ul {
+    @extend .no-bullets;
+  }
 }

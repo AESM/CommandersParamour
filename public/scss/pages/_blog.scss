@@ -5,4 +5,20 @@
 
 .blog {
   position: relative;
+
+  @include el(icon) {
+    display: inline;
+  }
+
+  @include el(hyperlink) {
+    position: relative;
+
+    &::after {
+      color: $link-color;
+    }
+
+    &:visited::after {
+      color: $note-color;
+    }
+  }
 }

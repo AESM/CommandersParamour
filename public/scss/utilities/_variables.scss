@@ -30,17 +30,24 @@ $shadow-color: rgba($black, .18);
 
 $backg-color: $lochmara; // _base => body {background: $backg-color;}
 $code-color: $porcelain;
-$link-color: $java; // _base => a {background: $link-color;}
+$link-color: $java; // _base => a {color: $link-color;}
 $note-color: $grey;
 $text-color: $shark; // _typography => body {color: $text-color;}
 
+$player-one-color: $red;
+$player-two-color: $black;
+
+$chip-border: 2px $grey solid;
+
 //== Math Variable Usage ================================================/
+
+$main-font-size: $width--md-fnt;
 
 $main-br: $radius--slight;
 
 $main-speed: $speed--xqck; // _base => a,button {transition: $main-speed;}
 
-$max-grid-width: $width--xl; // _helpers => .container {max-width: $max-grid-width;}
+$max-cont-width: $width--lg; // _helpers => .tupperware {max-width: $max-cont-width;}
 
 //== Assigned Color Maps ================================================/
 

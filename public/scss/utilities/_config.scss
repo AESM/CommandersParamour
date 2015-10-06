@@ -9,12 +9,6 @@ $path__font: '../fonts' !default;
 $path__img: '../images' !default;
 $path__js: '../js' !default;
 
-//== Base Text Features =================================================/
-
-$base__font-size: 16px !default;
-$base__letter-space: 1px !default;
-$base__line-height: 24px !default;
-
 //== Font Stacks ========================================================/
 
 /// Sans-serif font stacks
@@ -113,7 +107,8 @@ $meteorite: #3C1F76 !default;
 //== Math Variables =====================================================/
 
 /// Border radii
-$radius--slight: .23em !default;
+$radius--slight: .5% !default;
+$radius--bend: 5% !default;
 $radius--curve: 25% !default;
 $radius--round: 50% !default;
 
@@ -125,29 +120,26 @@ $grid-gutter-width: 2% !default;
 /// Transition durations
 $speed--xxqck: .15s !default;
 $speed--xqck: .3s !default;
-$speed--qck: .5s !default;
+$speed--qck: .7s !default;
 $speed--norm: 1s !default;
 $speed--slw: 1.5s !default;
 $speed--xslw: 2s !default;
 $speed--xxslw: 2.5s !default;
 
-/// Transition Cubic Bézier functions
-$ease: cubic-bezier(.250, .100, .250, 1) !default;
-$ease-in: cubic-bezier(.420, 0, 1, 1) !default;
-$ease-out: cubic-bezier(0, 0, .580, 1) !default;
-$ease-in-out: cubic-bezier(.420, 0, .580, 1) !default;
-$linear: cubic-bezier(0, 0, 1, 1) !default;
-
 /// Widths
-$width--xxxs: 320px;
-$width--xxs: 480px;
-$width--xs: 640px;
-$width--sm: 768px;
-$width--md: 992px;
-$width--lg: 1024px;
-$width--xl: 1200px;
-$width--xxl: 1440px;
-$width--xxxl: 1920px;
+$width--flr: 1px !default;
+$width--sm-fnt: 12px !default;
+$width--md-fnt: 16px !default;
+$width--ln-hght: 24px !default;
+$width--xxxs: 320px !default;
+$width--xxs: 480px !default;
+$width--xs: 640px !default;
+$width--sm: 768px !default;
+$width--md: 992px !default;
+$width--lg: 1024px !default;
+$width--xl: 1200px !default;
+$width--xxl: 1440px !default;
+$width--xxxl: 1920px !default;
 
 //== Configuration Maps =================================================/
 
@@ -168,29 +160,43 @@ $breakpoints: (
 /// Transition Cubic Bézier function map
 /// Used with @ease function
 $eases: (
-  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  /// Standard
+  'ease': cubic-bezier(.250, .100, .250, 1),
+  'in': cubic-bezier(.420, 0, 1, 1),
+  'out': cubic-bezier(0, 0, .580, 1),
+  'in-out': cubic-bezier(.420, 0, .580, 1),
+  'linear': cubic-bezier(0, 0, 1, 1),
+  /// Cubic
   'in-cubic': cubic-bezier(.550, .055, .675, .190),
-  'in-quart': cubic-bezier(.895, .030, .685, .220),
-  'in-quint': cubic-bezier(.755, .050, .855, .060),
-  'in-sine': cubic-bezier(.470, 0, .745, .715),
-  'in-expo': cubic-bezier(.950, .050, .795, .035),
-  'in-circ': cubic-bezier(.600, .040, .980, .335),
-  'in-back': cubic-bezier(.600, -.280, .735, .045),
-  'out-quad': cubic-bezier(.250, .460, .450, .940),
   'out-cubic': cubic-bezier(.215, .610, .355, 1),
-  'out-quart': cubic-bezier(.165, .840, .440, 1),
-  'out-quint': cubic-bezier(.230, 1, .320, 1),
-  'out-sine': cubic-bezier(.390, .575, .565, 1),
-  'out-expo': cubic-bezier(.190, 1, .220, 1),
-  'out-circ': cubic-bezier(.075, .820, .165, 1),
-  'out-back': cubic-bezier(.175, .885, .320, 1.275),
-  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
   'in-out-cubic': cubic-bezier(.645, .045, .355, 1),
+  /// Quad
+  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  'out-quad': cubic-bezier(.250, .460, .450, .940),
+  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
+  /// Quart
+  'in-quart': cubic-bezier(.895, .030, .685, .220),
+  'out-quart': cubic-bezier(.165, .840, .440, 1),
   'in-out-quart': cubic-bezier(.770, 0, .175, 1),
+  /// Quint
+  'in-quint': cubic-bezier(.755, .050, .855, .060),
+  'out-quint': cubic-bezier(.230, 1, .320, 1),
   'in-out-quint': cubic-bezier(.860, 0, .070, 1),
+  /// Sine
+  'in-sine': cubic-bezier(.470, 0, .745, .715),
+  'out-sine': cubic-bezier(.390, .575, .565, 1),
   'in-out-sine': cubic-bezier(.445, .050, .550, .950),
+  /// Expo
+  'in-expo': cubic-bezier(.950, .050, .795, .035),
+  'out-expo': cubic-bezier(.190, 1, .220, 1),
   'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  /// Circ
+  'in-circ': cubic-bezier(.600, .040, .980, .335),
+  'out-circ': cubic-bezier(.075, .820, .165, 1),
   'in-out-circ': cubic-bezier(.785, .135, .150, .860),
+  /// Back
+  'in-back': cubic-bezier(.600, -.280, .735, .045),
+  'out-back': cubic-bezier(.175, .885, .320, 1.275),
   'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
 ) !default;
 
