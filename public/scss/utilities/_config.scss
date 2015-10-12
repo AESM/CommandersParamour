@@ -26,26 +26,6 @@ $font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monac
 $font-stack--aleo: 'Aleo-regular' !default;
 $font-stack--roboto: 'Roboto-regular' !default;
 
-//== Font Attributes ====================================================/
-
-/// Font weights
-$font-weight--thin: 100 !default;
-$font-weight--ultra-light: 200 !default;
-$font-weight--light: 300 !default;
-$font-weight--normal: 400 !default;
-$font-weight--medium: 500 !default;
-$font-weight--demi-bold: 600 !default;
-$font-weight--bold: 700 !default;
-$font-weight--ultra-bold: 800 !default;
-$font-weight--heavy: 900 !default;
-
-/// Font sizes
-$font-size--xs: 80% !default;
-$font-size--sm: 85% !default;
-$font-size--md: 90% !default;
-$font-size--lg: 110% !default;
-$font-size--xl: 120% !default;
-
 //== Descriptive Color Variables ========================================/
 
 /// Standard colors
@@ -79,7 +59,7 @@ $indigo: #4B0082 !default;
 
 /// Variant and custom colors
 $wild-sand: #F4F4F4 !default;
-$porcelain: #EFF2F3 !default;
+$gallery: #EFEFEF !default;
 $ebony: #0C0B1D !default;
 $cod-gray: #0B0B0B !default;
 
@@ -99,62 +79,77 @@ $pacific-blue: #009DC4 !default;
 $lochmara: #007EC7 !default;
 $prussian-blue: #003153 !default;
 $shark: #25272C !default;
+$matisse-ish: #116B94;
 
 $studio: #714AB2 !default;
 $purple-heart: #652DC1 !default;
 $meteorite: #3C1F76 !default;
+$malubu-ish: #8194FA !default;
 
 //== Math Variables =====================================================/
 
-/// Border radii
-$radius--slight: .5% !default;
-$radius--bend: 5% !default;
-$radius--curve: 25% !default;
-$radius--round: 50% !default;
+/// Percentages
+$percent--beyond: 120% !default;
+$percent--over: 110% !default;
+$percent--roof: 100% !default;
+$percent--major: 90% !default;
+$percent--high: 80% !default;
+$percent--mid-high: 70% !default;
+$percent--mid: 50% !default;
+$percent--mid-low: 25% !default;
+$percent--low: 10% !default;
+$percent--very-low: 5% !default;
+$percent--minor: 2% !default;
+$percent--floor: 1% !default;
+$percent--below: .5% !default;
+$percent--abyss: .15% !default;
 
-// Grid features
-$grid-col-total: 12 !default;
-$grid-col-width: 6.5% !default;
-$grid-gutter-width: 2% !default;
-
-/// Transition durations
-$speed--xxqck: .15s !default;
-$speed--xqck: .3s !default;
-$speed--qck: .7s !default;
-$speed--norm: 1s !default;
-$speed--slw: 1.5s !default;
-$speed--xslw: 2s !default;
+/// Durations
 $speed--xxslw: 2.5s !default;
+$speed--xslw: 2s !default;
+$speed--vslw: 1.7s !default;
+$speed--slw: 1.5s !default;
+$speed--avg: 1s !default;
+$speed--qck: .7s !default;
+$speed--vqck: .5s !default;
+$speed--xqck: .3s !default;
+$speed--xxqck: .15s !default;
 
 /// Widths
-$width--flr: 1px !default;
-$width--sm-fnt: 12px !default;
-$width--md-fnt: 16px !default;
-$width--ln-hght: 24px !default;
-$width--xxxs: 320px !default;
-$width--xxs: 480px !default;
-$width--xs: 640px !default;
-$width--sm: 768px !default;
-$width--md: 992px !default;
-$width--lg: 1024px !default;
-$width--xl: 1200px !default;
-$width--xxl: 1440px !default;
-$width--xxxl: 1920px !default;
+$width--lg-length: 1000px !default;
+$width--md-length: 800px !default;
+$width--sm-length: 600px !default;
+$width--lg-type: 24px !default;
+$width--md-type: 20px !default;
+$width--avg-type: 16px !default;
+$width--sm-type: 12px !default;
+$width--floor: 1px !default;
+
+/// Font weights
+$font-weight--heavy: 900 !default;
+$font-weight--ultra-bold: 800 !default;
+$font-weight--bold: 700 !default;
+$font-weight--demi-bold: 600 !default;
+$font-weight--medium: 500 !default;
+$font-weight--normal: 400 !default;
+$font-weight--light: 300 !default;
+$font-weight--ultra-light: 200 !default;
+$font-weight--thin: 100 !default;
 
 //== Configuration Maps =================================================/
 
 /// Breakpoints map
 /// Used with @respond-to mixin
 $breakpoints: (
-  'xxxs': (min-width: 320px),
-  'xxs': (min-width: 480px),
-  'xs': (min-width: 640px),
-  'sm': (min-width: 768px),
-  'md': (min-width: 992px),
-  'lg': (min-width: 1024px),
-  'xl': (min-width: 1200px),
+  'xxxl': (min-width: 1920px),
   'xxl': (min-width: 1440px),
-  'xxxl': (min-width: 1920px)
+  'xl': (min-width: 1200px),
+  'lg': (min-width: 1024px),
+  'md': (min-width: 992px),
+  'sm': (min-width: 768px),
+  'xs': (min-width: 640px),
+  'xxs': (min-width: 480px),
+  'xxxs': (min-width: 320px)
 ) !default;
 
 /// Transition Cubic Bézier function map
@@ -203,14 +198,18 @@ $eases: (
 /// Z-indexing map
 /// Used with @z function
 $zindices: (
+  'beyond': 9999,
   'over': 9001,
-  'modal': 9000,
-  'overlay': 8000,
-  'dropdown': 7000,
-  'high': 6000,
+  'roof': 9000,
+  'major': 8000,
+  'high': 7000,
+  'mid-high': 6000,
   'mid': 5000,
-  'low': 4000,
-  'base': 1,
+  'mid-low': 4000,
+  'low': 3000,
+  'very-low': 2000,
+  'minor': 1000,
+  'floor': 1,
   'below': -1,
   'abyss': -9000
 ) !default;

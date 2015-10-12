@@ -3,17 +3,17 @@
 ////= Layout Manifest
 //======================================================================//
 
-/// Import header styling
-@import 'header';
-
 /// Import main container styling
-@import 'main';
+@import 'container';
 
 /// Import column styling
 @import 'column';
 
 /// Import row styling
 @import 'row';
+
+/// Import header styling
+@import 'header';
 
 /// Import footer styling
 @import 'footer';

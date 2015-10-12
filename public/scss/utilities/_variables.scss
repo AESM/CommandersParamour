@@ -3,51 +3,101 @@
 ////= Global Variable Assignments
 //======================================================================//
 
-//== Asset Path Usage ===================================================/
+//== Foundation Variables ===============================================/
 
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 20px !default; // _foundation => html {font-size}
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 20px !default; // _foundation => body {font}
+
+/// Body font line-height
+$core__body--line-height: 1 !default; // _foundation => body {font}
+
+/// Body font-stack
+$core__body--font-stack: $font-stack--roboto; // _foundation => body {font}
+
+/// Body text-color
+$core__body--text-color: $shark; // _foundation => body {color}
+
+/// Body background-color
+$core__body--background-color: $gallery; // _foundation => body {background}
+
+//== Assigned Variables =================================================/
+
+/// Asset path usage
 $fav: $path__img + '/favicons';
+$icon: $path__img + '/icons';
 $logo: $path__img + '/logos';
+$vend-js: $path__js + '/vendors';
 
-//== Font Usage =========================================================/
-
+/// Main fonts
 $primary-font: $font-stack--aleo;
 $secondary-font: $font-stack--futura;
 $tertiary-font: $font-stack--garamond;
 $accent-font: $font-stack--courier-new;
 
+/// Font usage
+// $button-font: $XXXXXX;
 // $code-font: $XXXXXX;
+// $icon-font: $XXXXXX;
 // $link-font: $XXXXXX;
 // $note-font: $XXXXXX;
-$text-font: $font-stack--roboto; // _typography => body {font: pxem(40) $text-font;}
+// $text-font: $XXXXXX;
 
-//== Color Usage ========================================================/
-
+/// Main colors
 $primary-color: $blue;
 $secondary-color: $maroon;
 $tertiary-color: $purple;
 $accent-color: $navy;
 $shadow-color: rgba($black, .18);
 
-$backg-color: $lochmara; // _base => body {background: $backg-color;}
-$code-color: $porcelain;
-$link-color: $java; // _base => a {color: $link-color;}
+/// Color specifications
+$backg-color: $lochmara;
+$button-color: $malubu-ish; // _buttons => .button {background-color}
+$code-color: $wild-sand;
+$icon-color: $shark;
+$link-color: $java; // _base => a {color}
 $note-color: $grey;
-$text-color: $shark; // _typography => body {color: $text-color;}
+$text-color: $shark;
 
-$player-one-color: $red;
-$player-two-color: $black;
+$board-color: $matisse-ish;
+$space-color: $white;
+$highlight-color: $silver;
 
+$player-one-color: $monza;
+$player-two-color: $cod-gray;
 $chip-border: 2px $grey solid;
 
-//== Math Variable Usage ================================================/
+/// Font sizes
+$font-size: $width--md-type;
+$large-font: $percent--over;
+$full-font: $percent--roof;
+$medium-font: $percent--major;
+$small-font: $percent--high; // _typography => small {font-size}
+$sub-font: $percent--mid-high; // _typography => sub,sup {font-size}
 
-$main-font-size: $width--md-fnt;
+/// Border radii
+$main-radius: $percent--below;
+$round-radius: $percent--mid;
+$curve-radius: $percent--mid-low;
+$bend-radius: $percent--very-low;
 
-$main-br: $radius--slight;
+/// Transition durations
+$main-trans: $speed--xqck; // _base => a,button {transition}
 
-$main-speed: $speed--xqck; // _base => a,button {transition: $main-speed;}
+/// Main container widths
+$desktop-width: $width--lg-length; // _container => .container {@include respond-to('xxxl') {width}}
+$laptop-width: $width--md-length; // _container => .container {@include respond-to('xl') {width}}
+$tablet-width: $width--sm-length; // _container => .container {@include respond-to('sm') {width}}
+$gutter-width: $percent--minor; // _container => .container {@include respond-to(...) {.gutters .column {margin-left}}}
 
-$max-cont-width: $width--lg; // _helpers => .tupperware {max-width: $max-cont-width;}
+/// Font emphasis
+$crucial: $font-weight--heavy;
+$serious: $font-weight--bold;
+$natural: $font-weight--normal;
 
 //== Assigned Color Maps ================================================/
 

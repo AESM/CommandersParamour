@@ -72,15 +72,16 @@
 /// Responsive manager
 /// @param {String} $key - Breakpoint
 /// @requires $breakpoints
+/// @modifier Ali Esmaili
 /// @link http://sass-guidelin.es/#breakpoint-manager
 @mixin respond-to($key) {
-  $query: map-get($breakpoints, $key);
+  $value: map-get($breakpoints, $key);
 
-  @if not $query {
+  @if not $value {
     @error 'No value found for `#{$key}`. Please make sure it is defined in `$breakpoints` map.';
   }
 
-  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+  @media #{if(type-of($value) == 'string', unquote($value), inspect($value))} {
     @content;
   }
 }

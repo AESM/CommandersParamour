@@ -1,11 +1,12 @@
 // _helpers.scss
 
-////= Helpers Classes and Placeholders
+////= Helper Classes and Placeholders
 //======================================================================//
 
 /// Clearfix lets an element clear its child elements, in float layouts
 //where elements are floated horizontal stacking
 /// Often used to combat the zero-height container problem
+/// @link https://css-tricks.com/snippets/css/clear-fix/
 .clearfix,
 %clearfix {
 
@@ -21,9 +22,8 @@
 %tupperware {
   margin-left: auto;
   margin-right: auto;
-  max-width: $max-cont-width;
-  padding-left: pxem(20px);
-  padding-right: pxem(20px);
+  padding-left: pxem(22px);
+  padding-right: pxem(22px);
   width: 100%;
 }
 
@@ -82,8 +82,8 @@
 /// @link https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
 .smooth-scroll,
 %smooth-scroll {
-  overflow-y: scroll; // has to be scroll, not auto
   -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; // has to be scroll, not auto
 }
 
 /// Truncates text that is too long
