@@ -1,0 +1,341 @@
+// _container.scss
+
+////= Main Container Styling
+//======================================================================//
+
+.container {
+  height: pxem(600px);
+  margin: pxem(20px) auto 0;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-top: pxem(40px);
+  position: relative;
+  width: pxem(820px);
+  // width: pxem(700px);
+
+  /// Responsive 12-column grid
+  /// @based-off-of http://responsive.gs/
+  // @include respond-to('sm') {
+  //   max-width: pxem($tablet-width);
+
+  //   .gutters .column {
+  //     margin-left: $gutter-width;
+  //   }
+
+  //   .gutters .column:first-child {
+  //     margin-left: 0;
+  //   }
+
+  //   .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .span-10 {
+  //     width: 83.5%;
+  //   }
+
+  //   .span-9 {
+  //     width: 75%;
+  //   }
+
+  //   .span-8 {
+  //     width: 66.5%;
+  //   }
+
+  //   .span-7 {
+  //     width: 58.5%;
+  //   }
+
+  //   .span-6 {
+  //     width: 50%;
+  //   }
+
+  //   .span-5 {
+  //     width: 41.5%;
+  //   }
+
+  //   .span-4 {
+  //     width: 33.5%;
+  //   }
+
+  //   .span-3 {
+  //     width: 25%;
+  //   }
+
+  //   .span-2 {
+  //     width: 16.5%;
+  //   }
+
+  //   .span-1 {
+  //     width: 8.5%;
+  //   }
+
+  //   .gutters .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .gutters .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .gutters .span-10 {
+  //     width: 83%;
+  //   }
+
+  //   .gutters .span-9 {
+  //     width: 74.5%;
+  //   }
+
+  //   .gutters .span-8 {
+  //     width: 66%;
+  //   }
+
+  //   .gutters .span-7 {
+  //     width: 57.5%;
+  //   }
+
+  //   .gutters .span-6 {
+  //     width: 49%;
+  //   }
+
+  //   .gutters .span-5 {
+  //     width: 40.5%;
+  //   }
+
+  //   .gutters .span-4 {
+  //     width: 32%;
+  //   }
+
+  //   .gutters .span-3 {
+  //     width: 23.5%;
+  //   }
+
+  //   .gutters .span-2 {
+  //     width: 15%;
+  //   }
+
+  //   .gutters .span-1 {
+  //     width: 6.5%;
+  //   }
+  // }
+
+  // @include respond-to('xl') {
+  //   max-width: pxem($laptop-width);
+
+  //   .gutters .column {
+  //     margin-left: $gutter-width;
+  //   }
+
+  //   .gutters .column:first-child {
+  //     margin-left: 0;
+  //   }
+
+  //   .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .span-10 {
+  //     width: 83.5%;
+  //   }
+
+  //   .span-9 {
+  //     width: 75%;
+  //   }
+
+  //   .span-8 {
+  //     width: 66.5%;
+  //   }
+
+  //   .span-7 {
+  //     width: 58.5%;
+  //   }
+
+  //   .span-6 {
+  //     width: 50%;
+  //   }
+
+  //   .span-5 {
+  //     width: 41.5%;
+  //   }
+
+  //   .span-4 {
+  //     width: 33.5%;
+  //   }
+
+  //   .span-3 {
+  //     width: 25%;
+  //   }
+
+  //   .span-2 {
+  //     width: 16.5%;
+  //   }
+
+  //   .span-1 {
+  //     width: 8.5%;
+  //   }
+
+  //   .gutters .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .gutters .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .gutters .span-10 {
+  //     width: 83%;
+  //   }
+
+  //   .gutters .span-9 {
+  //     width: 74.5%;
+  //   }
+
+  //   .gutters .span-8 {
+  //     width: 66%;
+  //   }
+
+  //   .gutters .span-7 {
+  //     width: 57.5%;
+  //   }
+
+  //   .gutters .span-6 {
+  //     width: 49%;
+  //   }
+
+  //   .gutters .span-5 {
+  //     width: 40.5%;
+  //   }
+
+  //   .gutters .span-4 {
+  //     width: 32%;
+  //   }
+
+  //   .gutters .span-3 {
+  //     width: 23.5%;
+  //   }
+
+  //   .gutters .span-2 {
+  //     width: 15%;
+  //   }
+
+  //   .gutters .span-1 {
+  //     width: 6.5%;
+  //   }
+  // }
+
+  // @include respond-to('xxxl') {
+  //   max-width: pxem($desktop-width);
+
+  //   .gutters .column {
+  //     margin-left: $gutter-width;
+  //   }
+
+  //   .gutters .column:first-child {
+  //     margin-left: 0;
+  //   }
+
+  //   .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .span-10 {
+  //     width: 83.5%;
+  //   }
+
+  //   .span-9 {
+  //     width: 75%;
+  //   }
+
+  //   .span-8 {
+  //     width: 66.5%;
+  //   }
+
+  //   .span-7 {
+  //     width: 58.5%;
+  //   }
+
+  //   .span-6 {
+  //     width: 50%;
+  //   }
+
+  //   .span-5 {
+  //     width: 41.5%;
+  //   }
+
+  //   .span-4 {
+  //     width: 33.5%;
+  //   }
+
+  //   .span-3 {
+  //     width: 25%;
+  //   }
+
+  //   .span-2 {
+  //     width: 16.5%;
+  //   }
+
+  //   .span-1 {
+  //     width: 8.5%;
+  //   }
+
+  //   .gutters .span-12 {
+  //     width: 100%;
+  //   }
+
+  //   .gutters .span-11 {
+  //     width: 91.5%;
+  //   }
+
+  //   .gutters .span-10 {
+  //     width: 83%;
+  //   }
+
+  //   .gutters .span-9 {
+  //     width: 74.5%;
+  //   }
+
+  //   .gutters .span-8 {
+  //     width: 66%;
+  //   }
+
+  //   .gutters .span-7 {
+  //     width: 57.5%;
+  //   }
+
+  //   .gutters .span-6 {
+  //     width: 49%;
+  //   }
+
+  //   .gutters .span-5 {
+  //     width: 40.5%;
+  //   }
+
+  //   .gutters .span-4 {
+  //     width: 32%;
+  //   }
+
+  //   .gutters .span-3 {
+  //     width: 23.5%;
+  //   }
+
+  //   .gutters .span-2 {
+  //     width: 15%;
+  //   }
+
+  //   .gutters .span-1 {
+  //     width: 6.5%;
+  //   }
+  // }
+}

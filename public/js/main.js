@@ -1,3 +1,9 @@
 // main.js
 
-console.log("RAPTORSMACSS!\nSo modular...");
+BoardController.prototype = {
+  chipAdd: function() {
+    if(this.board.gameInSession) {
+      return chipCount++;
+    }
+  },
+};

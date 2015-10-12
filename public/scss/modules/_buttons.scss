@@ -4,8 +4,33 @@
 //======================================================================//
 
 .button {
-  background-color: $grey;
+  background-color: $button-color;
+  border-radius: $bend-radius;
+  // border-radius: pxem(20px);
   color: $black;
+  font-size: $medium-font;
   // height: 40px;
-  padding: pxem(1.5px);
+  // margin: pxem(2px) 0;
+  padding: pxem(5px);
+
+  &:hover {
+    -moz-animation-duration: $speed--qck;
+    -o-animation-duration: $speed--qck;
+    -webkit-animation-duration: $speed--qck;
+    animation-duration: $speed--qck;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    background-color: $grey;
+    opacity: .85;
+  }
 }

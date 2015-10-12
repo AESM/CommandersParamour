@@ -3,33 +3,10 @@
 ////= Base Styling
 //======================================================================//
 
-html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smooting: antialiased;
-  -webkit-tap-highlight-color: $clear;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  background: $backg-color;
-  margin: 0;
-}
-
 a,
 button {
   color: inherit;
-  transition: $main-speed;
+  transition: $main-trans;
 }
 
 a {
@@ -41,8 +18,8 @@ a {
 
   &::before {
     background: currentcolor;
-    content: ' ';
-    height: 1px;
+    content: '';
+    height: pxem(1px);
     left: 0;
     position: absolute;
     right: 0;
@@ -122,8 +99,6 @@ li {
 
 sub,
 sup {
-  font-size: 70%;
-  line-height: 0;
   position: relative;
   vertical-align: baseline;
 }

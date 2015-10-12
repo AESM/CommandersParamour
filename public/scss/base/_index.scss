@@ -3,6 +3,9 @@
 ////= Base Manifest
 //======================================================================//
 
+/// Import HTML and Body styling
+@import 'foundation';
+
 /// Import base styling
 @import 'base';
 
@@ -14,3 +17,6 @@
 
 /// Import typographic styling
 @import 'typography';
+
+/// Import iconographic styling
+@import 'iconography';

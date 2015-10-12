@@ -5,15 +5,16 @@
 
 //== Pixel Conversion ===================================================/
 
-/// Convert pixels to em values
-@function pxem($px-target, $px-compared: $main-font-size) {
-  @return ($px-target / $px-compared) * 1em;
+/// Convert pixels to rem values
+/// @requires $core__html--font-size
+@function pxrem($px-target, $px-compared: $core__html--font-size) {
+  @return ($px-target / $px-compared) * 1rem;
 }
 
-/// Convert pixels to rem values
-@function pxrem($px-target) {
-  $px-compared: $main-font-size;
-  @return ($px-target / $px-compared) * 1rem;
+/// Convert pixels to em values
+/// @requires $core__body--font-size
+@function pxem($px-target, $px-compared: $core__body--font-size) {
+  @return ($px-target / $px-compared) * 1em;
 }
 
 //== Color Tone Adjusters ===============================================/
@@ -47,5 +48,10 @@
 /// Z-indexer
 /// @requires $zindices
 @function z($key) {
-  @return map-get($zindices, $key);
+  @if map-has-key($zindices, $key) {
+    @return map-get($zindices, $key);
+  }
+
+  @warn 'Unknown `#{$key}` in $zindices.';
+  @return null;
 }
