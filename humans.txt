@@ -3,11 +3,12 @@
 /***= Humans Text File
 ========================================================================*/
 
-  Some information about the people who contributed
+  The humans responsible & technology colophon
 
-/*== Author ============================================================*/
+/*== Team ==============================================================*/
 
-  Developer & Designer: Ali Esmaili
+  Name: Ali Esmaili
+  Role: Developer & Designer
   Email: AESM85@gmail.com
   SuitAndCape GitHub: https://github.com/SuitAndCape
   Personal GitHub: https://github.com/AESM
@@ -31,9 +32,10 @@
     Instagram: https://instagram.com/USERNAME
     Location: AREA
 
-/*== Site Info =========================================================*/
+/*== Info ==============================================================*/
 
-  Last update: 201Y/MM/DD
-  Language: English
-  Components: HTML5, CSS3
-  Development tools: Sublime Text 3, iTerm2, Illustrator, Photoshop
+  Last update: 2015/11/11
+  Languages: JavaScript, CSS3, HTML5
+  Components: jQuery, Sass (SCSS), jshint, scss-lint, tidy-html5, Firebase
+  Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,
+    Google Chrome

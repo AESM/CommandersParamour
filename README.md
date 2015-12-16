@@ -3,7 +3,7 @@
 Commander's Paramour
 ==========================================================================
 
-Commander's Paramour is a [Captain's Mistress (A.K.A. Connect Four)](http://en.wikipedia.org/wiki/Connect_Four) clone.
+Commander's Paramour is a [Captain's Mistress (A.K.A. Connect Four)](http://en.wikipedia.org/wiki/Connect_Four) clone, built using JavaScript, jQuery, HTML5, CSS3, and Sass (SCSS).
 
 ## Contents
 

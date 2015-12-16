@@ -21,6 +21,19 @@
   }
 }
 
+/// Background image assignment and features
+/// @param {String} $image-path - Path to image
+/// @param {String} $name - Name of image
+/// @param {Length(s)} $length - Optional length width or width and height
+/// @requires _variables => Asset paths
+@mixin bg-img($image-path, $name, $length:false) {
+  background-image: url('#{$image-path}/#{$name}');
+
+  @if($length) {
+    background-size: $length;
+  }
+}
+
 //== Sass Map Mixins ====================================================/
 
 /// Element color map modifier
@@ -61,7 +74,7 @@
 //
 // <mock-tag class="fake-selector--color-key">
 //
-@mixin bg-colors($color-map) {
+@mixin bg-mo-colors($color-map) {
   @each $key, $value in $color-map {
     &--#{$key} {
       background-color: $value;

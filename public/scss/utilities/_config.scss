@@ -23,8 +23,8 @@ $font-stack--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera San
 $font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
 
 /// Variant and custom font stacks
-$font-stack--aleo: 'Aleo-regular' !default;
-$font-stack--roboto: 'Roboto-regular' !default;
+$font-stack--aleo: 'Aleo-regular', serif !default;
+$font-stack--roboto: 'Roboto-regular', sans-serif !default;
 
 //== Descriptive Color Variables ========================================/
 
@@ -85,6 +85,26 @@ $studio: #714AB2 !default;
 $purple-heart: #652DC1 !default;
 $meteorite: #3C1F76 !default;
 $malubu-ish: #8194FA !default;
+
+/// RGBa standard colors
+$rgba-white: rgba(255, 255, 255, 0) !default;
+$rgba-silver: rgba(192, 192, 192, 0) !default;
+$rgba-grey: rgba(128, 128, 128, 0) !default;
+$rgba-black: rgba(0, 0, 0, 0) !default;
+
+$rgba-red: rgba(255, 0, 0, 0) !default;
+$rgba-brown: rgba(165, 42, 42, 0) !default;
+$rgba-yellow: rgba(255, 255, 0, 0) !default;
+$rgba-orange: rgba(255, 165, 0, 0) !default;
+$rgba-green: rgba(0, 128, 0, 0) !default;
+$rgba-blue: rgba(0, 0, 255, 0) !default;
+$rgba-purple: rgba(128, 0, 128, 0) !default;
+
+/// RGBa variant and custom  colors
+$rgba-wild-sand: rgba(244, 244, 244, 0) !default;
+$rgba-gallery: rgba(239, 239, 239, 0) !default;
+$rgba-ebony: rgba(12, 11, 29, 0) !default;
+$rgba-cod-gray: rgba(11, 11, 11, 0) !default;
 
 //== Math Variables =====================================================/
 
