@@ -1,9 +1,9 @@
 // _variables.scss
 
 ////= Global Variable Assignments
-//======================================================================//
+//===========================================================================//
 
-//== Foundation Variables ===============================================/
+//== Foundation Variables ====================================================/
 
 /// HTML font-size
 /// Used with @pxrem function
@@ -25,7 +25,7 @@ $core__body--text-color: $shark; // _foundation => body {color}
 /// Body background-color
 $core__body--background-color: $gallery; // _foundation => body {background}
 
-//== Assigned Variables =================================================/
+//== Assigned Variables ======================================================/
 
 /// Asset path usage
 $icon: $path__img + '/icons';
@@ -98,7 +98,7 @@ $crucial: $font-weight--heavy;
 $serious: $font-weight--bold;
 $natural: $font-weight--normal;
 
-//== Assigned Color Maps ================================================/
+//== Assigned Color Maps =====================================================/
 
 $ui-map: (
   'error': $monza,

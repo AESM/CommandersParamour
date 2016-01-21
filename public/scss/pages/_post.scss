@@ -1,19 +1,10 @@
 // _post.scss
 
 ////= Post Page Styling
-//======================================================================//
+//===========================================================================//
 
 .post {
-
   @include el(headline) {
     text-transform: capitalize;
   }
-
-  // @include el(footline) {
-    //
-  // }
-
-  // @include el(image) {
-    //
-  // }
 }

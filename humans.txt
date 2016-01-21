@@ -1,11 +1,11 @@
 /* humanstxt.org */
 
 /***= Humans Text File
-========================================================================*/
+=============================================================================*/
 
   The humans responsible & technology colophon
 
-/*== Team ==============================================================*/
+/*== Team ===================================================================*/
 
   Name: Ali Esmaili
   Role: Developer & Designer
@@ -14,25 +14,10 @@
   Personal GitHub: https://github.com/AESM
   Website: https://SuitAndCape.github.io/
   LinkedIn: https://www.linkedin.com/in/SuitAndCape
-  Dribbble: https://dribbble.com/SuitAndCape
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
-/*== Thanks ============================================================*/
-
-  /*===== NAME Team =====*/
-    Name: NAME
-    Role: ROLE
-    Email: EMAIL
-    GitHub: https://github.com/USERNAME
-    Website: https://WEBSITE/
-    LinkedIn: https://www.linkedin.com/in/USERNAME
-    Dribbble: https://dribbble.com/USERNAME
-    Twitter: https://twitter.com/USERNAME
-    Instagram: https://instagram.com/USERNAME
-    Location: AREA
-
-/*== Info ==============================================================*/
+/*== Info ===================================================================*/
 
   Last update: 2015/11/11
   Languages: JavaScript, CSS3, HTML5

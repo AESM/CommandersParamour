@@ -1,7 +1,7 @@
 <!-- README.md -->
 
 Commander's Paramour
-==========================================================================
+===============================================================================
 
 Commander's Paramour is a [Captain's Mistress (A.K.A. Connect Four)](http://en.wikipedia.org/wiki/Connect_Four) clone, built using JavaScript, jQuery, HTML5, CSS3, and Sass (SCSS).
 
@@ -18,7 +18,7 @@ Commander's Paramour is a [Captain's Mistress (A.K.A. Connect Four)](http://en.w
 
 - Source: [_Wikipedia_](http://en.wikipedia.org/wiki/Connect_Four)
 
---------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 ## License
 
@@ -28,11 +28,10 @@ This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  F
 
 ## Connect
 
-|              :tophat:             |              :rocket:             |
-| --------------------------------- | --------------------------------- |
+|               :tophat:               |               :rocket:               |
+| ------------------------------------ | ------------------------------------ |
 **_SuitAndCape GitHub_** | https://github.com/SuitAndCape
 **_Personal GitHub_**    | https://github.com/AESM
 **_Website_**            | https://SuitAndCape.github.io/
 **_LinkedIn_**           | https://www.linkedin.com/in/SuitAndCape
-**_Dribbble_**           | https://dribbble.com/SuitAndCape
 **_Twitter_**            | https://twitter.com/SuitAndCape

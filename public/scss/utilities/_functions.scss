@@ -1,9 +1,9 @@
 // _functions.scss
 
 ////= Functions
-//======================================================================//
+//===========================================================================//
 
-//== Pixel Conversion ===================================================/
+//== Pixel Conversion ========================================================/
 
 /// Convert pixels to rem values
 /// @requires $core__html--font-size
@@ -17,7 +17,7 @@
   @return ($px-target / $px-compared) * 1em;
 }
 
-//== Color Tone Adjusters ===============================================/
+//== Color Tone Adjusters ====================================================/
 
 /// Increase the level of blackness in a color by a certain percentage
 @function blacker($color, $percent) {
@@ -29,7 +29,7 @@
   @return mix($white, $color, $percent);
 }
 
-//== Sass Map Functions =================================================/
+//== Sass Map Functions ======================================================/
 
 /// Cubic Bézier manager
 /// @param {String} $key - Cubic Bézier option
